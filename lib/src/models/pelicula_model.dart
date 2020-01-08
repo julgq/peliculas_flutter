@@ -69,6 +69,15 @@ class Pelicula {
       return 'https://image.tmdb.org/t/p/w500/$posterPath';
     }
   }
+
+  getBackgroundImg() {
+    print(posterPath);
+    if (posterPath == null) {
+      return 'http://www.langem.org/wp-content/uploads/2018/04/placeholder.png';
+    } else {
+      return 'https://image.tmdb.org/t/p/w500/$backdropPath';
+    }
+  }
 }
 
 enum OriginalLanguage { EN, CN, KO }
